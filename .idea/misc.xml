@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Public/Documents/Kotlin_practice/app/src/main/res/drawable-v24/tree_tree1.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Public/Documents/Kotlin_practice/app/src/main/res/drawable/custom_icon_mypage.xml" value="0.3828125" />
+        <entry key="..\:/Users/Public/Documents/Kotlin_practice/app/src/main/res/drawable/custom_imagebutton_mypage.xml" value="0.17364864864864865" />
+        <entry key="..\:/Users/Public/Documents/Kotlin_practice/app/src/main/res/drawable/custum_button.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Public/Documents/Kotlin_practice/app/src/main/res/font/comfortaa_bold.xml" value="0.2630208333333333" />
         <entry key="..\:/Users/Public/Documents/Kotlin_practice/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Public/Documents/Kotlin_practice/app/src/main/res/layout/activity_mypage.xml" value="0.22" />
+        <entry key="..\:/Users/Public/Documents/Kotlin_practice/app/src/main/res/layout/activity_mypage_treelist.xml" value="0.2328125" />
+        <entry key="..\:/Users/Public/Documents/Kotlin_practice/app/src/main/res/layout/recycler_row_mypage.xml" value="0.2328125" />
       </map>
     </option>
   </component>

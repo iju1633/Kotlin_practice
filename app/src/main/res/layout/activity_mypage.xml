@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mypage.MyPageActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+
+
+        android:text="MYPAGE"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="359dp"
+        android:layout_height="153dp"
+
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/custom_tv1_mypage"
+        android:shadowColor="@color/black"
+        android:shadowDy="5"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+
+        android:layout_width="338dp"
+        android:layout_height="109dp"
+
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="300dp"
+
+        android:background="@drawable/custom_itembox_mypage"
+
+        android:textColor="#616161"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="338dp"
+        android:layout_height="109dp"
+
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="430dp"
+
+        android:background="@drawable/custom_itembox_mypage"
+
+        android:textColor="#616161"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <TextView
+        android:id="@+id/pic_tree"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="445dp"
+
+        android:background="@drawable/custom_imagebutton_mypage"
+
+        android:contentDescription=""
+
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="338dp"
+        android:layout_height="109dp"
+
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="560dp"
+
+        android:background="@drawable/custom_itembox_mypage"
+
+        android:textColor="#616161"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <TextView
+        android:id="@+id/pic_walk"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="565dp"
+
+        android:background="@drawable/walking_mypage"
+
+        android:contentDescription="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="800dp"
+
+        android:backgroundTint="@color/black"
+
+
+        android:text="LET'S SAVE OUT EARTH !" />
+
+    <TextView
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="730dp"
+
+        android:text="75 minutes a week of brisk walking can add \n                 almost 2 years to your life" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi ! "
+        android:textColor="@color/white"
+        android:textSize="25sp"
+
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="45dp"
+
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="110dp"
+
+        android:text="{User Name}"
+        android:textColor="@color/white"
+
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="150dp"
+
+        android:text="Thank you for supporting our app"
+        android:textColor="@color/white"
+
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="210dp"
+
+        android:text="Register Date : "
+
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/register_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="210dp"
+
+        android:text="{Register Date}"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="450dp"
+
+        android:text="You can plant various trees\n\nLooking forward being with you :)" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+
+        android:layout_marginTop="590dp"
+        android:text="You have walked this far :)\n\nStay healthy and save your Earth" />
+
+    <Button
+        android:id="@+id/goto_treeList"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="#00ff0000"
+
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="502dp"
+        android:text="More info >"
+        android:textColor="@color/black"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/just_in_case"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="380dp"
+
+        android:text="More info >"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="320dp"
+
+        android:background="@drawable/custom_icon_mypage"
+        android:src="@drawable/point_mypage"
+         />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="{P}"
+
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="335dp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="320dp"
+
+        android:background="@drawable/custom_icon_mypage"
+        android:src="@drawable/pail_mypage"
+        />
+
+    <TextView
+        android:id="@+id/pail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="{X}"
+
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="335dp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="320dp"
+
+        android:background="@drawable/custom_icon_mypage"
+        android:src="@drawable/number_of_steps_mypage"
+        />
+
+    <TextView
+        android:id="@+id/number_of_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="{X}"
+
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="335dp"
+        />
+
+    <TextView
+        android:id="@+id/km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="635dp"
+
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="{km}"
+        />
+
+</FrameLayout>
