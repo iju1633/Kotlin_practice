@@ -3,8 +3,8 @@ package com.example.kotlin_practice.ui.mypage
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.kotlin_practice.data.model.RecyclerData
-import com.example.kotlin_practice.data.repository.ImageRepository
+import com.example.kotlin_practice.data.model.mypage.RecyclerData
+import com.example.kotlin_practice.data.repository.mypage.ImageRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

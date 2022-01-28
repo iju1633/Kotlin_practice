@@ -4,13 +4,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
+import coil.load
 import com.example.kotlin_practice.R
-import com.example.kotlin_practice.data.model.RecyclerData
+import com.example.kotlin_practice.data.model.mypage.RecyclerData
 import kotlinx.android.synthetic.main.recycler_row_mypage.view.*
 
 
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
+
+
 
     private var listData: List<RecyclerData>? = null
 
@@ -32,7 +34,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolde
     }
 
     override fun getItemCount(): Int {
-        if(listData ==null)return 0
+        if(listData ==null) return 0
         return listData?.size!!
     }
     class MyViewHolder(view: View): RecyclerView.ViewHolder(view) {
@@ -40,13 +42,15 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolde
         val tvName = view.tvName
         val tvDesc = view.tvDesc
 
+        // 일반적으로 onBindViewHolder가 아닌 Recycler Holder 클래스 내부에 별도의 bind 함수를 구현하여 바인딩을 진행합니다! 한번 알아보시면 도움이 될 것 같아요! --> resolved!
         fun bind(data: RecyclerData) {
             tvName.text = data.name
             tvDesc.text = data.description
 
-            Glide.with(thumbImage)
-                .load(data.owner?.avatar_url)
-                .into(thumbImage)
+            thumbImage.load(data.owner?.avatar_url) {
+                crossfade(true)
+                crossfade(1000)
+            }
         }
     }
 }

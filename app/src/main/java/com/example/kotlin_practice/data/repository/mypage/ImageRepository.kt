@@ -1,15 +1,15 @@
-package com.example.kotlin_practice.data.repository
+package com.example.kotlin_practice.data.repository.mypage
 
 import androidx.lifecycle.MutableLiveData
-import com.example.kotlin_practice.data.api.ImageApiService
-import com.example.kotlin_practice.data.model.RecyclerData
-import com.example.kotlin_practice.data.model.RecyclerList
+import com.example.kotlin_practice.data.api.MyPageApiService
+import com.example.kotlin_practice.data.model.mypage.RecyclerData
+import com.example.kotlin_practice.data.model.mypage.RecyclerList
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import javax.inject.Inject
 
-class ImageRepository @Inject constructor(private val retroInstance: ImageApiService) {
+class ImageRepository @Inject constructor(private val retroInstance: MyPageApiService) {
 
     fun makeApiCall(query: String, liveDataList: MutableLiveData<List<RecyclerData>>) {
         val call: Call<RecyclerList> = retroInstance.getDataFromAPI(query)
@@ -25,3 +25,7 @@ class ImageRepository @Inject constructor(private val retroInstance: ImageApiSer
 
     }
 }
+
+// 아직 잘 모르겠는 부분..ㅜ
+// 깜빡했는데 Repository 는 Interface 로 선언하고 ~RepositoryImpl 이라는 구현체 클래스를 따로 만들어주세요.
+// Module 내용도 바뀌어야겠죠? :)

@@ -1,7 +1,7 @@
 package com.example.kotlin_practice.di
 
 import com.example.kotlin_practice.BuildConfig
-import com.example.kotlin_practice.data.api.ImageApiService
+import com.example.kotlin_practice.data.api.MyPageApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -13,14 +13,15 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object NetworkModule {
+object MyPageNetworkModule {
 
     @Singleton
     @Provides
-    fun getRetroInstance() : ImageApiService =
+    fun getRetroInstance() : MyPageApiService =
         Retrofit.Builder()
             .baseUrl(BuildConfig.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(ImageApiService::class.java)
+            .create(MyPageApiService::class.java)
 }
+
