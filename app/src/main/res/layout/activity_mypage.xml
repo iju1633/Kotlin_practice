@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.mypage.MyPageActivity">
+    tools:context=".ui.mypage.MyPageActivity"
+    >
 
 
     <TextView
@@ -22,10 +23,10 @@
 
     <TextView
         android:id="@+id/textview1"
-        android:layout_width="359dp"
+        android:layout_width="362dp"
         android:layout_height="153dp"
 
-        android:layout_marginHorizontal="25dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="90dp"
         android:background="@drawable/custom_tv1_mypage"
         android:shadowColor="@color/black"
@@ -40,7 +41,7 @@
         android:layout_width="338dp"
         android:layout_height="109dp"
 
-        android:layout_marginHorizontal="35dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="300dp"
 
         android:background="@drawable/custom_itembox_mypage"
@@ -54,7 +55,7 @@
         android:layout_width="338dp"
         android:layout_height="109dp"
 
-        android:layout_marginHorizontal="35dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="430dp"
 
         android:background="@drawable/custom_itembox_mypage"
@@ -68,8 +69,8 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
 
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="445dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="450dp"
 
         android:background="@drawable/custom_imagebutton_mypage"
 
@@ -82,7 +83,7 @@
         android:layout_width="338dp"
         android:layout_height="109dp"
 
-        android:layout_marginHorizontal="35dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="560dp"
 
         android:background="@drawable/custom_itembox_mypage"
@@ -97,7 +98,7 @@
         android:layout_height="60dp"
 
         android:layout_marginStart="60dp"
-        android:layout_marginTop="565dp"
+        android:layout_marginTop="570dp"
 
         android:background="@drawable/walking_mypage"
 
@@ -106,9 +107,9 @@
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="56dp"
 
-        android:layout_marginTop="800dp"
+        android:layout_marginTop="780dp"
 
         android:backgroundTint="@color/black"
 
@@ -119,8 +120,8 @@
         android:layout_width="299dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="730dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="720dp"
 
         android:text="75 minutes a week of brisk walking can add \n                 almost 2 years to your life" />
 
@@ -187,8 +188,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="445dp"
 
         android:text="You can plant various trees\n\nLooking forward being with you :)" />
 
@@ -196,7 +197,7 @@
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="140dp"
 
         android:layout_marginTop="590dp"
         android:text="You have walked this far :)\n\nStay healthy and save your Earth" />
@@ -207,8 +208,8 @@
         android:layout_height="40dp"
         android:backgroundTint="#00ff0000"
 
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="502dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="495dp"
         android:text="More info >"
         android:textColor="@color/black"
 
@@ -230,7 +231,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
 
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="320dp"
 
         android:background="@drawable/custom_icon_mypage"
@@ -254,7 +255,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
 
-        android:layout_marginStart="180dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="320dp"
 
         android:background="@drawable/custom_icon_mypage"
@@ -304,7 +305,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginStart="75dp"
-        android:layout_marginTop="635dp"
+        android:layout_marginTop="640dp"
 
         android:textStyle="bold"
         android:textColor="@color/black"

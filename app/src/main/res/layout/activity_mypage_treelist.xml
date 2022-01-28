@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+
+    >
 
     <ImageButton
         android:id="@+id/gotoMyPage"
@@ -11,7 +13,7 @@
         android:layout_height="20dp"
 
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="35dp"
 
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/previous_mypage_treelist"
@@ -24,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="490dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="120dp"
 
         />
 
@@ -32,17 +34,17 @@
         android:layout_width="318dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="700dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="680dp"
 
         android:text="Walking 30 to 60 minutes most days of the week drastically lowers your risk of heart disease" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
 
-        android:layout_marginTop="800dp"
+        android:layout_marginTop="780dp"
 
         android:backgroundTint="@color/black"
 
@@ -57,7 +59,7 @@
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
 
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
 
         android:textSize="20sp"
 
