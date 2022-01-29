@@ -2,26 +2,32 @@ package com.example.kotlin_practice.data.repository.mypage
 
 import androidx.lifecycle.MutableLiveData
 import com.example.kotlin_practice.data.api.MyPageApiService
-import com.example.kotlin_practice.data.model.mypage.RecyclerData
-import com.example.kotlin_practice.data.model.mypage.RecyclerList
+import com.example.kotlin_practice.data.model.mypage.DataModel
+import com.example.kotlin_practice.di.MyPageNetworkModule
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import javax.inject.Inject
 
-class ImageRepository @Inject constructor(private val retroInstance: MyPageApiService) {
+class ImageRepository @Inject constructor(val retroInstance: MyPageApiService) {
 
-    fun makeApiCall(query: String, liveDataList: MutableLiveData<List<RecyclerData>>) {
-        val call: Call<RecyclerList> = retroInstance.getDataFromAPI(query)
-        call?.enqueue(object : Callback<RecyclerList>{
-            override fun onFailure(call: Call<RecyclerList>, t: Throwable) {
+    fun makeAPICall(liveDataList: MutableLiveData<List<DataModel>>) {
+        val retroInstance = MyPageNetworkModule.getRetroInstance()
+        val call  = retroInstance.getDataWithAPI()
+
+        call.enqueue(object : Callback<List<DataModel>> {
+            override fun onFailure(call: Call<List<DataModel>>, t: Throwable) {
                 liveDataList.postValue(null)
             }
 
-            override fun onResponse(call: Call<RecyclerList>, response: Response<RecyclerList>) {
-                liveDataList.postValue(response.body()?.items!!)
+            override fun onResponse(
+                call: Call<List<DataModel>>,
+                response: Response<List<DataModel>>
+            ) {
+                liveDataList.postValue(response.body())
             }
         })
+
 
     }
 }

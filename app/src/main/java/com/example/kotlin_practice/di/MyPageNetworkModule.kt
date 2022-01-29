@@ -19,7 +19,7 @@ object MyPageNetworkModule {
     @Provides
     fun getRetroInstance() : MyPageApiService =
         Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_URL)
+            .baseUrl(BuildConfig.BASE_URL_TEST)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(MyPageApiService::class.java)
