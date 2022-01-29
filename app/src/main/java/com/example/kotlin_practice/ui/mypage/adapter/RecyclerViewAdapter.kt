@@ -10,7 +10,7 @@ import com.example.kotlin_practice.R
 import com.example.kotlin_practice.data.model.mypage.DataModel
 import kotlinx.android.synthetic.main.recycler_row_mypage.view.*
 
-class RecyclerViewAdapter(val activity: Activity): RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
+class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
     private var dataList: List<DataModel>? = null
 
@@ -29,7 +29,7 @@ class RecyclerViewAdapter(val activity: Activity): RecyclerView.Adapter<Recycler
     }
 
     override fun onBindViewHolder(holder: RecyclerViewAdapter.MyViewHolder, position: Int) {
-        holder.bind(dataList?.get(position)!!, activity)
+        holder.bind(dataList?.get(position)!!)
     }
 
     override fun getItemCount(): Int {
@@ -43,7 +43,7 @@ class RecyclerViewAdapter(val activity: Activity): RecyclerView.Adapter<Recycler
         val url = view.url
 
         // 일반적으로 onBindViewHolder가 아닌 Recycler Holder 클래스 내부에 별도의 bind 함수를 구현하여 바인딩을 진행합니다! 한번 알아보시면 도움이 될 것 같아요! --> resolved!
-        fun bind(data: DataModel, activity: Activity) {
+        fun bind(data: DataModel) {
             title.text = data.title
             url.text = data.url
 

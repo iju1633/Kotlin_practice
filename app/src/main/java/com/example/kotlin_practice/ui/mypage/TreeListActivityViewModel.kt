@@ -11,11 +11,7 @@ import javax.inject.Inject
 @HiltViewModel
 class TreeListActivityViewModel @Inject constructor(val repository: ImageRepository): ViewModel() {
 
-    lateinit var liveDataList: MutableLiveData<List<DataModel>>
-
-    init {
-        liveDataList = MutableLiveData()
-    }
+    var liveDataList: MutableLiveData<List<DataModel>> = MutableLiveData()
 
 
     fun getLiveDataObserver(): MutableLiveData<List<DataModel>> {
