@@ -7,33 +7,36 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.kotlin_practice.R
+import com.example.kotlin_practice.databinding.ActivityMypageTreelistBinding
 import com.example.kotlin_practice.ui.mypage.adapter.RecyclerViewAdapter
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.activity_mypage_treelist.*
+
 
 @AndroidEntryPoint
 class TreeListActivity : AppCompatActivity() {
     lateinit var recyclerAdapter: RecyclerViewAdapter
+    private lateinit var binding : ActivityMypageTreelistBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mypage_treelist)
+
+        binding = ActivityMypageTreelistBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         initRecyclerView()
         initViewModel()
 
         // 유저가 보유한 나무 목록을 보여주는 페이지의 좌측 상단 뒤로가기 아이콘을 누르면 마이페이지 창으로 전환됨
-        gotoMyPage.setOnClickListener {
+        binding.gotoMyPage.setOnClickListener {
             val intent = Intent(this, MyPageActivity::class.java)
             startActivity(intent)
         }
     }
 
     private fun initRecyclerView() {
-        recyclerview.layoutManager = LinearLayoutManager(this)
+        binding.recyclerview.layoutManager = LinearLayoutManager(this)
         recyclerAdapter = RecyclerViewAdapter()
-        recyclerview.adapter =recyclerAdapter
+        binding.recyclerview.adapter =recyclerAdapter
 
     }
 

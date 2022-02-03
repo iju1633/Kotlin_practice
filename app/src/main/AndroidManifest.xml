@@ -5,6 +5,9 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+
+        android:usesCleartextTraffic="true"
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:name=".TreenityApplication"
@@ -30,3 +33,5 @@
     </application>
 
 </manifest>
+
+    <!--https 로 설정이 완료되면 android:usesCleartextTraffic="true" 지울 것-->

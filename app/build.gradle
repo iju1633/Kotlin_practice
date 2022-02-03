@@ -3,7 +3,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'dagger.hilt.android.plugin'
-    id 'kotlin-android-extensions'// id 'kotlin-parcelize'// id 'kotlin-android-extensions' deprecated
+    // id 'kotlin-android-extensions'// id 'kotlin-parcelize'// id 'kotlin-android-extensions' deprecated
 }
 
 android {
@@ -27,17 +27,15 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-
-            buildConfigField "String", "BASE_URL", '"https://api.github.com/search/"'
-            buildConfigField "String", "BASE_URL_TEST", '"https://jsonplaceholder.typicode.com/"'
+            
+            buildConfigField "String", "BASE_URL", '"http://34.64.118.180:8080/"'
         }
 
         debug {
             applicationIdSuffix ".debug"
             debuggable true
 
-            buildConfigField "String", "BASE_URL", '"https://api.github.com/search/"'
-            buildConfigField "String", "BASE_URL_TEST", '"https://jsonplaceholder.typicode.com/"'
+            buildConfigField "String", "BASE_URL", '"http://34.64.118.180:8080/"'
         }
     }
     compileOptions {
@@ -55,6 +53,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -88,5 +87,7 @@ dependencies {
 
     //coil
     implementation("io.coil-kt:coil:1.1.1")
+
+    implementation 'androidx.databinding:databinding-runtime:7.0.3'
 
 }

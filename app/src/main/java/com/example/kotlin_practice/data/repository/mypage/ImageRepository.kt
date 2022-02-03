@@ -2,7 +2,7 @@ package com.example.kotlin_practice.data.repository.mypage
 
 import androidx.lifecycle.MutableLiveData
 import com.example.kotlin_practice.data.api.MyPageApiService
-import com.example.kotlin_practice.data.model.mypage.DataModel
+import com.example.kotlin_practice.data.model.mypage.tree.TreeModelItemList
 import com.example.kotlin_practice.di.MyPageNetworkModule
 import retrofit2.Call
 import retrofit2.Callback
@@ -11,25 +11,27 @@ import javax.inject.Inject
 
 class ImageRepository @Inject constructor(val retroInstance: MyPageApiService) {
 
-    fun makeAPICall(liveDataList: MutableLiveData<List<DataModel>>) {
-        val retroInstance = MyPageNetworkModule.getRetroInstance()
-        val call  = retroInstance.getDataWithAPI()
 
-        call.enqueue(object : Callback<List<DataModel>> {
-            override fun onFailure(call: Call<List<DataModel>>, t: Throwable) {
-                liveDataList.postValue(null)
+    // code for recyclerview
+    fun makeAPICall(liveTreeList: MutableLiveData<TreeModelItemList>) {
+        val retroInstance = MyPageNetworkModule.getRetroInstance()
+        val call  = retroInstance.getTreeData()
+
+        call.enqueue(object : Callback<TreeModelItemList> {
+            override fun onFailure(call: Call<TreeModelItemList>, t: Throwable) {
+                liveTreeList.postValue(null)
             }
 
             override fun onResponse(
-                call: Call<List<DataModel>>,
-                response: Response<List<DataModel>>
+                call: Call<TreeModelItemList>,
+                response: Response<TreeModelItemList>
             ) {
-                liveDataList.postValue(response.body())
+                liveTreeList.postValue(response.body())
             }
         })
 
-
     }
+
 }
 
 // 아직 잘 모르겠는 부분..ㅜ
