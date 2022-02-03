@@ -88,6 +88,7 @@ dependencies {
     //coil
     implementation("io.coil-kt:coil:1.1.1")
 
-    implementation 'androidx.databinding:databinding-runtime:7.0.3'
+    //databinding
+    implementation 'androidx.databinding:databinding-runtime:7.1.0'
 
 }
