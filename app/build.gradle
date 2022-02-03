@@ -6,6 +6,9 @@ plugins {
     // id 'kotlin-android-extensions'// id 'kotlin-parcelize'// id 'kotlin-android-extensions' deprecated
 }
 
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
 android {
     compileSdk 31
 
@@ -28,14 +31,14 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             
-            buildConfigField "String", "BASE_URL", '"http://34.64.118.180:8080/"'
+            buildConfigField "String", "BASE_URL", properties['base_url']
         }
 
         debug {
             applicationIdSuffix ".debug"
             debuggable true
 
-            buildConfigField "String", "BASE_URL", '"http://34.64.118.180:8080/"'
+            buildConfigField "String", "BASE_URL", properties['base_url']
         }
     }
     compileOptions {
