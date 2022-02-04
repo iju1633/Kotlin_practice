@@ -13,7 +13,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object MyPageNetworkModule {
+object MyPageNetworkModule { // MyPageApiService 를 이용하여 Retrofit instance 생성 & 싱글톤으로 생성하여 관리에 용이
 
     @Singleton
     @Provides

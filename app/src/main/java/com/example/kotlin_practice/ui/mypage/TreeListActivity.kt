@@ -12,6 +12,7 @@ import com.example.kotlin_practice.ui.mypage.adapter.RecyclerViewAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 
+///////////////// 상세페이지 /////////////////
 @AndroidEntryPoint
 class TreeListActivity : AppCompatActivity() {
     lateinit var recyclerAdapter: RecyclerViewAdapter
@@ -33,6 +34,7 @@ class TreeListActivity : AppCompatActivity() {
         }
     }
 
+    // adapter 부착
     private fun initRecyclerView() {
         binding.recyclerview.layoutManager = LinearLayoutManager(this)
         recyclerAdapter = RecyclerViewAdapter()
@@ -50,6 +52,8 @@ class TreeListActivity : AppCompatActivity() {
                 Toast.makeText(this, "Error in getting list", Toast.LENGTH_SHORT).show()
             }
         })
+
+        // data fetch 를 위해 필수적인 코드!!
         viewModel.loadListOfData()
     }
 }

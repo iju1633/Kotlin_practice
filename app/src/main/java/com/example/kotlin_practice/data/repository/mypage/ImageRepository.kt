@@ -17,7 +17,7 @@ class ImageRepository @Inject constructor(val retroInstance: MyPageApiService) {
         val retroInstance = MyPageNetworkModule.getRetroInstance()
         val call  = retroInstance.getTreeData()
 
-        call.enqueue(object : Callback<TreeModelItemList> {
+        call.enqueue(object : Callback<TreeModelItemList> { // 비동기 처리
             override fun onFailure(call: Call<TreeModelItemList>, t: Throwable) {
                 liveTreeList.postValue(null)
             }

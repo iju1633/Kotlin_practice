@@ -7,12 +7,10 @@ import android.widget.Toast
 import com.example.kotlin_practice.databinding.ActivityMypageBinding
 import com.example.kotlin_practice.di.MyPageNetworkModule
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 import retrofit2.*
 
+///////////////// 마이페이지 화면 /////////////////
 @AndroidEntryPoint
 class MyPageActivity : AppCompatActivity() {
 

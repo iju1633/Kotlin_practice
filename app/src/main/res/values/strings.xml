@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kotlin_practice</string>
+
+    <string name="imageview_descriptor">This is the picture of your tree. Thanks for using app</string>
+
+    <string name="item_classification_button">This image button is for item classification. Enjoy your walk</string>
 </resources>

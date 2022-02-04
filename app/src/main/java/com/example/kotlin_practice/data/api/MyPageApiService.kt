@@ -7,6 +7,7 @@ import retrofit2.http.GET
 
 
 interface MyPageApiService {
+    // 스웨거 참고하여 코드 짤 것
 
     // mypage 의 textview 에 들어갈 데이터
     @GET("users/1/")

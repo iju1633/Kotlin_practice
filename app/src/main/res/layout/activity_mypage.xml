@@ -16,7 +16,9 @@
         android:layout_marginTop="35dp"
 
 
-        android:text="MYPAGE"
+        android:text="MyPage"
+        android:fontFamily="@font/comfortaa_bold"
+
         android:textColor="@color/black"
         android:textSize="20sp"
         />
@@ -36,8 +38,6 @@
         tools:layout_editor_absoluteY="100dp" />
 
     <TextView
-        android:id="@+id/textView2"
-
         android:layout_width="338dp"
         android:layout_height="109dp"
 
@@ -51,7 +51,6 @@
         tools:layout_editor_absoluteY="405dp" />
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="338dp"
         android:layout_height="109dp"
 
@@ -79,7 +78,6 @@
         />
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="338dp"
         android:layout_height="109dp"
 
@@ -117,13 +115,14 @@
         android:text="LET'S SAVE OUT EARTH !" />
 
     <TextView
-        android:layout_width="299dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="720dp"
 
-        android:text="75 minutes a week of brisk walking can add \n                 almost 2 years to your life" />
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="75 minutes a week of brisk walking can add almost 2 years to your life" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -184,7 +183,6 @@
         android:textSize="15sp" />
 
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -200,7 +198,8 @@
         android:layout_marginStart="140dp"
 
         android:layout_marginTop="590dp"
-        android:text="You have walked this far :)\n\nStay healthy and save your Earth" />
+        android:text="You have walked this far :)\n\nStay healthy and save your Earth"
+        />
 
     <Button
         android:id="@+id/goto_treeList"
@@ -236,7 +235,7 @@
 
         android:background="@drawable/custom_icon_mypage"
         android:src="@drawable/point_mypage"
-         />
+        />
 
     <TextView
         android:id="@+id/point"
